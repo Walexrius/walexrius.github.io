@@ -182,10 +182,13 @@ h1.headline .accent-word { color: var(--accent); }
 svg.wave { display: block; width: 100%; height: auto; }
 .wave-path {
   fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
-  stroke-dasharray: 600; stroke-dashoffset: 600; animation: draw 2.6s ease-out forwards, glow 3s ease-in-out 2.6s infinite;
+  stroke-dasharray: 900; stroke-dashoffset: 900; animation: wave-pulse 0.9s linear infinite;
 }
-@keyframes draw { to { stroke-dashoffset: 0; } }
-@keyframes glow { 0%, 100% { opacity: 1; } 50% { opacity: 0.75; } }
+@keyframes wave-pulse {
+  0% { stroke-dashoffset: 900; }
+  50% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -900; }
+}
 .wave-caption { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-faint); padding: 10px 2px 4px; }
 .signature-footnote { position: relative; margin-top: 18px; font-size: 0.86rem; color: var(--ink-soft); line-height: 1.55; }
 .signature-footnote strong { color: var(--ink); }
@@ -222,6 +225,7 @@ svg.wave { display: block; width: 100%; height: auto; }
 .skill-row-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .skill-percent { font-family: var(--font-mono); font-weight: 700; font-size: 1rem; color: var(--accent); white-space: nowrap; }
 .skill-row-wave .wave { max-height: 46px; }
+.skill-row-wave .wave-path { animation-duration: 0.4s; }
 .skills-footnote { margin-top: 16px; font-size: 0.82rem; color: var(--ink-faint); line-height: 1.6; }
 
 /* ---------- PORTFOLIO / CERTIFICATES ---------- */
@@ -313,7 +317,7 @@ textarea.form-input { resize: vertical; min-height: 130px; }
 .site-footer .foot-links a:hover { color: var(--ink); }
 
 @media (prefers-reduced-motion: reduce) {
-  .wave-path { animation: none; stroke-dashoffset: 0; }
+  .wave-path { animation: none; stroke-dashoffset: 0; stroke-dasharray: none; }
   .signature-header .status .blip { animation: none; }
   .t-item.is-current .t-node::after { animation: none; }
 }
