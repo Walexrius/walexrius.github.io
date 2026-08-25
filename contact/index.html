@@ -9,11 +9,10 @@
 <link rel="icon" href="../assets/walex_images/favicon-512.png" sizes="512x512" type="image/png" />
 <link rel="apple-touch-icon" href="../assets/walex_images/favicon-180.png" />
 <link rel="stylesheet" href="../assets/css/style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Skip To Content</a>
 
   <nav class="nav">
     <a href="../" class="nav-brand"><img src="../assets/walex_images/mascot.png" alt="" class="nav-avatar" />Kamal Singh</a>
@@ -27,6 +26,8 @@
     </ul>
   </nav>
 
+  <main id="main-content" tabindex="-1">
+
   <header class="page-header">
     <span class="eyebrow">Say Hi</span>
     <h1 class="page-title">Contact</h1>
@@ -35,13 +36,13 @@
 
   <div class="contact-grid">
     <div>
-      <div class="contact-card">
-        <iframe
-          src="https://www.google.com/maps?q=Piazza+Cavour,+Ancona,+Italy&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Ancona, Italy map"
-        ></iframe>
+      <div class="contact-card map-card">
+        <div class="map-card-body">
+          <span class="map-eyebrow">◆ Based In</span>
+          <h3 class="map-city">Ancona, Italy</h3>
+          <p class="map-coords">43.6167° N, 13.5167° E</p>
+          <a class="map-link" href="https://www.google.com/maps?q=Piazza+Cavour,+Ancona,+Italy" target="_blank" rel="noopener">Open In Google Maps →</a>
+        </div>
       </div>
       <div class="socials-row">
         <a class="social-pill" href="mailto:ares.kamalsingh@gmail.com">Email</a>
@@ -55,16 +56,24 @@
 
     <form action="https://formsubmit.co/ares.kamalsingh@gmail.com" method="POST" class="form">
       <div class="input-row">
-        <label for="contact-name" hidden>Full name</label>
-        <input id="contact-name" type="text" name="name" class="form-input" placeholder="Full name" required />
-        <label for="contact-email" hidden>Email address</label>
-        <input id="contact-email" type="email" name="email" class="form-input" placeholder="Email address" required />
+        <div class="field">
+          <label for="contact-name" class="form-label">Full Name</label>
+          <input id="contact-name" type="text" name="name" class="form-input" placeholder="Full name" required />
+        </div>
+        <div class="field">
+          <label for="contact-email" class="form-label">Email Address</label>
+          <input id="contact-email" type="email" name="email" class="form-input" placeholder="Email address" required />
+        </div>
       </div>
-      <label for="contact-message" hidden>Your message</label>
-      <textarea id="contact-message" name="message" class="form-input" placeholder="Your message" required></textarea>
+      <div class="field">
+        <label for="contact-message" class="form-label">Your Message</label>
+        <textarea id="contact-message" name="message" class="form-input" placeholder="Your message" required></textarea>
+      </div>
       <button class="btn btn-primary" type="submit">Send Message</button>
     </form>
   </div>
+
+  </main>
 
   <footer class="site-footer">
     <span class="foot-copy">© 2026 Kamal Rajkumar Singh</span>
@@ -72,6 +81,8 @@
       <a href="https://github.com/Walexrius" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/kamal-rajkumar-singh-walexrius" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.instagram.com/kamal_siiingh/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com/Walexrius" target="_blank" rel="noopener">X</a>
+      <a href="https://www.threads.net/letstalk_kamalsingh" target="_blank" rel="noopener">Threads</a>
     </div>
   </footer>
 

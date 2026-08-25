@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code local config/cache
+.claude/
+graphify-out/
+
+# Playwright MCP local test output
+.playwright-mcp/
+
+# Env / secrets
+.env
+.env.*
+*.pem
+*.key

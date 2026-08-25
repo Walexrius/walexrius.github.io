@@ -31,8 +31,23 @@ from the `main` branch.
 
 Blog and YouTube sections are designed to sync at build time via a scheduled
 GitHub Action that reads the relevant RSS feeds and writes a small JSON file
-the pages read from — no API keys, no third-party proxy service. Not wired
-up yet; the empty state on `/blog/` explains this.
+(`posts.json`) the pages read from — no API keys, no third-party proxy
+service. Not wired up yet; the empty state on `/blog/` explains this.
+
+Once `posts.json` exists, `/blog/` should render a `.blog-grid` of
+`.blog-card` links, reusing the pattern already styled in `style.css`:
+
+```html
+<div class="blog-grid">
+  <a href="POST_URL" target="_blank" rel="noopener" class="blog-card">
+    <div class="blog-card-body">
+      <div class="blog-meta">SUBSTACK · Oct 28, 2025</div>
+      <h3 class="blog-title">Post title</h3>
+      <p class="blog-excerpt">Short excerpt pulled from the feed.</p>
+    </div>
+  </a>
+</div>
+```
 
 ## Local preview
 
