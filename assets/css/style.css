@@ -182,7 +182,7 @@ h1.headline .accent-word { color: var(--accent); }
 svg.wave { display: block; width: 100%; height: auto; }
 .wave-path {
   fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
-  stroke-dasharray: 900; stroke-dashoffset: 900; animation: wave-pulse 0.9s linear infinite;
+  stroke-dasharray: 900; stroke-dashoffset: 900; animation: wave-pulse 2.4s linear infinite;
 }
 @keyframes wave-pulse {
   0% { stroke-dashoffset: 900; }
@@ -225,7 +225,6 @@ svg.wave { display: block; width: 100%; height: auto; }
 .skill-row-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .skill-percent { font-family: var(--font-mono); font-weight: 700; font-size: 1rem; color: var(--accent); white-space: nowrap; }
 .skill-row-wave .wave { max-height: 46px; }
-.skill-row-wave .wave-path { animation-duration: 0.4s; }
 .skills-footnote { margin-top: 16px; font-size: 0.82rem; color: var(--ink-faint); line-height: 1.6; }
 
 /* ---------- PORTFOLIO / CERTIFICATES ---------- */
