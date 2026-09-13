@@ -4,6 +4,7 @@ Thumbs.db
 
 # Claude Code local config/cache
 .claude/
+.serena/
 graphify-out/
 
 # Playwright MCP local test output
