@@ -1,5 +1,7 @@
 # Walexrius.github.io — Handover
 
+Layer: Personal (the Walexrius persona's own site; not linked to WalexLabs) (see `~/Documents/Mimir/INDEX.md`)
+
 Paste this file's content (or point Claude at it) at the start of a new session to restore context fast.
 
 ## What this is
